@@ -19,13 +19,13 @@
          <h4>회원가입</h4>
             <div id="divId">
                <span>아이디</span>
-               <input type="text" id="id" placeholder="아이디를 입력해주세요" />
+               <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요" />
                <input type="button" id="idCheck" value="중복확인" onclick="duplicateId()" />
             </div>
             
             <div id="divPwd">
                <span>비밀번호</span>
-               <input type="text" id="pwd" placeholder="비밀번호를 입력해주세요" />
+               <input type="text" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요" />
             </div>
             
             
@@ -36,24 +36,24 @@
          
             <div id="divName">
                <span>이름</span>
-               <input type="text" id="name" placeholder="이름을 입력해주세요" />
+               <input type="text" name="name" id="name" placeholder="이름을 입력해주세요" />
             </div>
             
             
             <div id="divEmail">
                <span>이메일</span>
-               <input type="text" id="email" placeholder="예: hongkd@naver.com" />
+               <input type="text" name="email" id="email" placeholder="예: hongkd@naver.com" />
                <input type="button" id="emailCheck" value="중복확인" onclick="duplicateEmail()" />
             </div>
             
             <div id="divMobile">
                <span>휴대폰</span>
-               <input type="text" id="mobile" placeholder="숫자만 입력해주세요" />
+               <input type="text" name="mobile" id="mobile" placeholder="숫자만 입력해주세요" />
             </div>
             
             <div id="divPostcode">
                <span>우편번호</span>
-               <input type="text" id="postcode" placeholder="우편번호" />
+               <input type="text" name="postcode" id="postcode" placeholder="우편번호" />
                <%-- 우편번호 찾기 --%>
                <input type="button" id="zipcodeSearch" value="우편번호 찾기" onclick="searchPostcode()"/>
             </div>
@@ -74,7 +74,7 @@
             
             <div id="divBirthday">
                <span>생년월일</span>
-               <input type="text" id="birthday" placeholder="YYYY/MM/DD" />
+               <input type="text" name="birthday" id="birthday" placeholder="YYYY/MM/DD" />
             </div>
          
               <div id="submit">

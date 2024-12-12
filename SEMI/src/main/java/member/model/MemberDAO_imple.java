@@ -112,6 +112,42 @@ public class MemberDAO_imple implements MemberDAO {
       return memberList;
    }// end of public boolean idDuplicateCheck(String userid) throws SQLException------
 
+
+    // 회원가입
+	@Override
+	public int registerMember(MemberVO member) throws SQLException {
+
+		int result = 0;
+		
+		try {
+			
+			conn = ds.getConnection();
+			
+			String sql = " insert into tbl_member(m_id, m_pwd, m_name, m_email, m_mobile, m_postcode, m_address, m_detail_address, m_extra, m_gender, m_birth) "
+					   + " values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, member.getM_id());
+			pstmt.setString(2, member.getM_pwd());
+			pstmt.setString(3, member.getM_name());
+			pstmt.setString(4, member.getM_email());
+			pstmt.setString(5, member.getM_mobile());
+			pstmt.setString(6, member.getM_postcode());
+			pstmt.setString(7, member.getM_address());
+			pstmt.setString(8, member.getM_detail_address());
+			pstmt.setString(9, member.getM_extra());
+			pstmt.setString(10, member.getM_gender());
+			pstmt.setString(11, member.getM_birth());
+			
+			result = pstmt.executeUpdate();
+			
+		} finally {
+			close();
+		}
+		
+		return result;
+	}
+
 }
 
 
