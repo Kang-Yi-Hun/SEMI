@@ -1,13 +1,13 @@
-package member.model;
+package admin.model;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import member.domain.MemberVO;
+import admin.domain.MemberVO;
 
 public interface MemberDAO {
 
-   // 모든 회원을 조회하는 메소드
+   // 모�?? ?????? 조�?????? �?????
    List<MemberVO> SelectAll_member() throws SQLException;
    
 }

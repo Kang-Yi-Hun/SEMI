@@ -1,30 +1,30 @@
-package member.domain;
+package admin.domain;
 
 public class MemberVO {
 
-   private String m_id;             // νμ›μ•„μ΄λ””
-   private String m_pwd;                // λΉ„λ°€λ²νΈ (SHA-256 μ•”νΈν™” λ€μƒ)
-   private String m_name;               // νμ›λª…
-   private String m_email;              // μ΄λ©”μΌ (AES-256 μ•”νΈν™”/λ³µνΈν™” λ€μƒ)
-   private String m_mobile;             // μ—°λ½μ² (AES-256 μ•”νΈν™”/λ³µνΈν™” λ€μƒ) 
-   private String m_postcode;           // μ°νΈλ²νΈ
-   private String m_address;            // μ£Όμ†
-   private String m_detail_address;      // μƒμ„Έμ£Όμ†
-   private String m_extra;       // μ°Έκ³ ν•­λª©
-   private String m_gender;             // μ„±λ³„   λ‚¨μ:1  / μ—¬μ:2
-   private String m_birth;           // μƒλ…„μ›”μΌ  
-   private int m_point;                 // ν¬μΈνΈ 
-   private String m_register;        // κ°€μ…μΌμ 
-   private String m_lastpwd;  // λ§μ§€λ§‰μΌλ΅ μ•”νΈλ¥Ό λ³€κ²½ν• λ‚ μ§  
-   private int m_status;                // νμ›νƒν‡΄μ λ¬΄   1: μ‚¬μ©κ°€λ¥(κ°€μ…μ¤‘) / 0:μ‚¬μ©λ¶λ¥(νƒν‡΄) 
-   private int m_idle;                  // ν΄λ©΄μ λ¬΄      1: ν™λ™μ¤‘  /  0: ν΄λ©΄μ¤‘
-                                      // λ§μ§€λ§‰μΌλ΅ λ΅κ·ΈμΈ ν• λ‚ μ§μ‹κ°„μ΄ ν„μ¬μ‹κ°μΌλ΅ λ¶€ν„° 1λ…„μ΄ μ§€λ‚¬μΌλ©΄ ν΄λ©΄μΌλ΅ μ§€μ •  
+   private String m_id;             // ???????΄λ??
+   private String m_pwd;                // λΉ?λ°?λ²??? (SHA-256 ???Έν?? ????)
+   private String m_name;               // ????λª?
+   private String m_email;              // ?΄λ??? (AES-256 ???Έν??/λ³µν?Έν?? ????)
+   private String m_mobile;             // ?°λ?½μ? (AES-256 ???Έν??/λ³µν?Έν?? ????) 
+   private String m_postcode;           // ?°ν?Έλ???
+   private String m_address;            // μ£Όμ??
+   private String m_detail_address;      // ???Έμ£Ό??
+   private String m_extra;       // μ°Έκ???λª?
+   private String m_gender;             // ?±λ?   ?¨μ??:1  / ?¬μ??:2
+   private String m_birth;           // ????????  
+   private int m_point;                 // ?¬μ?Έν?? 
+   private String m_register;        // κ°????Όμ?? 
+   private String m_lastpwd;  // λ§?μ§?λ§??Όλ? ???Έλ?? λ³?κ²½ν?? ??μ§?  
+   private int m_status;                // ???????΄μ??λ¬?   1: ?¬μ?©κ???(κ°???μ¤?) / 0:?¬μ?©λ???(????) 
+   private int m_idle;                  // ?΄λ©΄??λ¬?      1: ????μ¤?  /  0: ?΄λ©΄μ¤?
+                                      // λ§?μ§?λ§??Όλ? λ΅?κ·Έμ?? ?? ??μ§???κ°??? ???¬μ??κ°??Όλ? λ¶??? 1???? μ§??¬μ?Όλ©΄ ?΄λ©΄?Όλ? μ§???  
    
    /////////////////////////////////////////////////////////////////////
    
    private boolean requirePwdChange = false;
-   // λ§μ§€λ§‰μΌλ΅ μ•”νΈλ¥Ό λ³€κ²½ν• λ‚ μ§κ°€ ν„μ¬μ‹κ°μΌλ΅ λ¶€ν„° 3κ°μ›”μ΄ μ§€λ‚¬μΌλ©΄ true
-   // λ§μ§€λ§‰μΌλ΅ μ•”νΈλ¥Ό λ³€κ²½ν• λ‚ μ§κ°€ ν„μ¬μ‹κ°μΌλ΅ λ¶€ν„° 3κ°μ›”μ΄ μ§€λ‚μ§€ μ•μ•μΌλ©΄ false
+   // λ§?μ§?λ§??Όλ? ???Έλ?? λ³?κ²½ν?? ??μ§?κ°? ???¬μ??κ°??Όλ? λ¶??? 3κ°????? μ§??¬μ?Όλ©΄ true
+   // λ§?μ§?λ§??Όλ? ???Έλ?? λ³?κ²½ν?? ??μ§?κ°? ???¬μ??κ°??Όλ? λ¶??? 3κ°????? μ§???μ§? ?????Όλ©΄ false
 
    /////////////////////////////////////////////////////////////////////
    public String getM_id() {
